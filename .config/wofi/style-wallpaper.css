@@ -1,8 +1,7 @@
-@import url('/home/kamui_kazi/.cache/wal/colors.css');
-@define-color mauve  @color9;
-@define-color red  @color9;
-@define-color lavender  @color7;
-@define-color text  @color7;
+@import url('.cache/wal/colors-wofi.css');
+
+@define-color text @color7;
+
 * {
     all:unset;
     font-family: 'CodeNewRoman Nerd Font Mono', monospace;
@@ -23,7 +22,6 @@ window {
     margin: 2px;
     padding: 5px;
     border: none;
-
 }
 #outer-box {    
     border: none;
@@ -43,24 +41,22 @@ window {
     outline: none;
     color: @text;
     box-shadow: 1px 1px 5px rgba(0,0,0, .5);
-    border-radius:10;
+    border-radius:10px;
     background-color: alpha(@background,.2);
 }
 #input image {
     border: none;
-    color: @red;
+    color: @color9;
     padding-right:10px;
 }
 #input * {
     border: none;
     outline: none;
 }
-
 #input:focus {
     outline: none;
     border: none;
-
-    border-radius:10;
+    border-radius: 10px;
 }
 #text {
     margin: 5px;
@@ -70,12 +66,11 @@ window {
 }
 #entry {
     all:unset;
-    padding: 20 0 20 45;
+    padding: 20px 0px 20px 45px;
 }
 #entry arrow {
     border: none;
-    color: @lavender;
-
+    color: @color7;
 }
 #entry:selected {
     border: none;
@@ -83,8 +78,8 @@ window {
     background-color: alpha(@background,.2);
 }
 #entry:selected #text {
-    color: @mauve;
+    color: @color9;
 }
 #entry:drop(active) {
-    background-color: @lavender !important;
+    background-color: @color7;
 }
